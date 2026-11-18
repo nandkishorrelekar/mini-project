@@ -1,8 +1,8 @@
 # PM Internship Recommender
 
-> **Latest Update:** Full-stack recommendation prototype deployed with Flask backend, React + Vite UI, synthetic 70-internship dataset (JSON & Excel), and 100% Precision@5 benchmark verification.
+> **Latest Update:** Full-stack recommendation prototype deployed with Flask backend, React + Vite UI, synthetic 70-internship dataset (JSON & Excel), 100% Precision@5 benchmark verification, and intelligent skill-gap analytics ("Learn these first" & "Almost ready" matching).
 
-An AI-powered internship recommendation engine built for the **PM Internship Scheme**. The system matches candidate credentials (education, skills, interests, sector preference, and location) against internship opportunities using **TF-IDF Vectorization** (unigram + bigram) and **Cosine Similarity**.
+An AI-powered internship recommendation engine built for the **PM Internship Scheme**. The system matches candidate credentials (education, skills, interests, sector preference, and location) against internship opportunities using **TF-IDF Vectorization** (unigram + bigram) and **Cosine Similarity**, enriched with synonym-aware skill-gap analysis and readiness tracking.
 
 ---
 
@@ -201,9 +201,62 @@ curl -i -X POST http://127.0.0.1:5000/api/recommend \
       "skills": "Python, SQL, Power BI, Advanced Excel, Data Visualization",
       "description": "Extract insights from multi-source operational data and build interactive dashboards. Deliver data summaries to assist decision-making across teams."
     }
+  ],
+  "skills_to_learn": [
+    {
+      "skill": "data preprocessing",
+      "needed_in": 1,
+      "out_of": 2,
+      "weight": 0.61
+    },
+    {
+      "skill": "tensorflow",
+      "needed_in": 1,
+      "out_of": 2,
+      "weight": 0.61
+    },
+    {
+      "skill": "advanced excel",
+      "needed_in": 1,
+      "out_of": 2,
+      "weight": 0.43
+    },
+    {
+      "skill": "data visualization",
+      "needed_in": 1,
+      "out_of": 2,
+      "weight": 0.43
+    },
+    {
+      "skill": "power bi",
+      "needed_in": 1,
+      "out_of": 2,
+      "weight": 0.43
+    },
+    {
+      "skill": "sql",
+      "needed_in": 1,
+      "out_of": 2,
+      "weight": 0.43
+    }
+  ],
+  "almost_ready": [
+    {
+      "id": "INT-006",
+      "title": "Machine Learning Intern",
+      "missing": [
+        "tensorflow",
+        "data preprocessing"
+      ]
+    }
   ]
 }
 ```
+
+##### Response Fields Breakdown:
+- **`recommendations`**: Ranked array of top matching internships sorted by cosine similarity `score` descending.
+- **`skills_to_learn`**: Priority list of up to 8 missing skills the candidate does not have (evaluated after canonical synonym normalization, e.g. `ML` ↔ `Machine Learning`, `Postgres` ↔ `PostgreSQL`). Each skill is weighted by the sum of similarity scores of the internships that need it (`weight = round(sum(scores), 2)`) and sorted by weight descending.
+- **`almost_ready`**: Filtered subset of recommended internships where the candidate has **2 or fewer missing skills**, enabling candidates to quickly target near-match roles.
 
 ---
 

@@ -10,7 +10,7 @@ from flask_cors import CORS
 
 # Add current directory to path for engine import
 sys.path.insert(0, os.path.dirname(__file__))
-from engine import recommend, _default_engine
+from engine import recommend, compute_skills_gap, _default_engine
 
 app = Flask(__name__)
 CORS(app)
@@ -109,7 +109,15 @@ def get_recommendations():
         for item in results
     ]
 
-    return jsonify({"recommendations": recommendations}), 200
+    skills_to_learn, almost_ready = compute_skills_gap(
+        profile["skills"], recommendations
+    )
+
+    return jsonify({
+        "recommendations": recommendations,
+        "skills_to_learn": skills_to_learn,
+        "almost_ready": almost_ready
+    }), 200
 
 
 if __name__ == "__main__":

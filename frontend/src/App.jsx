@@ -43,6 +43,8 @@ function App() {
   const [sectors, setSectors] = useState([])
   const [sectorsLoading, setSectorsLoading] = useState(true)
   const [recommendations, setRecommendations] = useState([])
+  const [skillsToLearn, setSkillsToLearn] = useState([])
+  const [almostReady, setAlmostReady] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
   const [hasSearched, setHasSearched] = useState(false)
@@ -138,10 +140,14 @@ function App() {
       }
 
       setRecommendations(data.recommendations || [])
+      setSkillsToLearn(data.skills_to_learn || [])
+      setAlmostReady(data.almost_ready || [])
     } catch (err) {
       console.error('API Error:', err)
       setError(err.message || 'Failed to fetch recommendations. Ensure the backend is running.')
       setRecommendations([])
+      setSkillsToLearn([])
+      setAlmostReady([])
     } finally {
       setLoading(false)
     }
@@ -153,6 +159,24 @@ function App() {
     if (pct >= 30) return '#3b82f6' // royal blue
     if (pct >= 15) return '#f59e0b' // amber
     return '#6b7280' // gray
+  }
+
+  const formatSkillDisplay = (skill) => {
+    if (!skill) return ''
+    const upperAcronyms = [
+      'sql', 'aws', 'etl', 'gis', 'gst', 'tds', 'pcr', 'cad', 'gcp', 'nlp',
+      'cnn', 'api', 'bi', 'crm', 'seo', 'sem', 'hr', 'qa', 'qc', 'ui', 'ux',
+      'fpga', 'arm', 'cmm', 'cnc', 'mrp', 'haccp', 'hplc', 'ats', 'siem', 'osint',
+      'meddra', 'wms', 'pos', 'dcf'
+    ]
+    return skill
+      .split(' ')
+      .map((w) => {
+        const clean = w.toLowerCase().replace(/[^a-z0-9]/g, '')
+        if (upperAcronyms.includes(clean)) return w.toUpperCase()
+        return w.charAt(0).toUpperCase() + w.slice(1)
+      })
+      .join(' ')
   }
 
   return (
@@ -372,80 +396,213 @@ function App() {
 
             {/* Recommendations List */}
             {!loading && recommendations.length > 0 && (
-              <div className="cards-list">
-                {recommendations.map((item, index) => {
-                  const scorePercent = Math.min(100, Math.max(0, item.score * 100))
-                  const scoreColor = getScoreColor(item.score)
-                  const skillsList = item.skills
-                    ? item.skills.split(',').map((s) => s.trim()).filter(Boolean)
-                    : []
-
-                  return (
-                    <article key={item.id} className="internship-card card">
-                      {/* Card Top: Rank & Title */}
-                      <div className="card-top">
-                        <div className="title-area">
-                          <span className="rank-badge">#{index + 1}</span>
-                          <div>
-                            <h3 className="internship-title">{item.title}</h3>
-                            <p className="company-name">{item.company}</p>
-                          </div>
-                        </div>
-
-                        <div className="score-badge-group">
-                          <span
-                            className="score-pct-label"
-                            style={{ color: scoreColor }}
-                          >
-                            {(item.score * 100).toFixed(1)}%
-                          </span>
-                          <span className="score-sub">Match Score</span>
-                        </div>
+              <>
+                {/* Learn These First: Skill Chips with Bars */}
+                {skillsToLearn.length > 0 && (
+                  <div className="learn-first-section card">
+                    <div className="section-title-row">
+                      <div>
+                        <h3 className="section-title">
+                          <span className="section-icon">⚡</span> Learn these first
+                        </h3>
+                        <p className="section-subtitle">
+                          Top missing skills weighted by similarity score across your recommended roles
+                        </p>
                       </div>
+                      <span className="count-pill">{skillsToLearn.length} Priority Skills</span>
+                    </div>
 
-                      {/* Score Percentage Bar */}
-                      <div className="progress-track" title={`Match Score: ${(item.score * 100).toFixed(2)}%`}>
-                        <div
-                          className="progress-fill"
-                          style={{
-                            width: `${Math.max(scorePercent, 5)}%`,
-                            backgroundColor: scoreColor,
-                          }}
-                        />
-                      </div>
+                    <div className="skills-bar-grid">
+                      {skillsToLearn.map((item, idx) => {
+                        const maxWeight = skillsToLearn[0]?.weight || 1
+                        const barPercent = Math.min(100, Math.max(12, Math.round((item.weight / maxWeight) * 100)))
 
-                      {/* Meta badges: Sector & Location */}
-                      <div className="card-meta">
-                        <span className="meta-pill sector-pill">
-                          🏢 {item.sector}
-                        </span>
-                        <span className="meta-pill location-pill">
-                          📍 {item.location}
-                        </span>
-                      </div>
-
-                      {/* Description */}
-                      {item.description && (
-                        <p className="card-description">{item.description}</p>
-                      )}
-
-                      {/* Skills Chips */}
-                      {skillsList.length > 0 && (
-                        <div className="skills-container">
-                          <span className="skills-heading">Skills:</span>
-                          <div className="skills-chips">
-                            {skillsList.map((skill, sIdx) => (
-                              <span key={sIdx} className="skill-chip">
-                                {skill}
+                        return (
+                          <div key={item.skill || idx} className="skill-bar-card">
+                            <div className="skill-bar-top">
+                              <span className="skill-title">{formatSkillDisplay(item.skill)}</span>
+                              <span className="skill-weight-badge" title="Cumulative similarity score">
+                                weight {item.weight.toFixed(2)}
                               </span>
-                            ))}
+                            </div>
+
+                            <div
+                              className="skill-bar-track"
+                              title={`Weight: ${item.weight} | Needed in ${item.needed_in} of ${item.out_of}`}
+                            >
+                              <div
+                                className="skill-bar-fill"
+                                style={{ width: `${barPercent}%` }}
+                              />
+                            </div>
+
+                            <div className="skill-bar-meta">
+                              <span>
+                                Needed in <strong>{item.needed_in}</strong> of {item.out_of} roles
+                              </span>
+                              <span>{Math.round((item.needed_in / item.out_of) * 100)}% coverage</span>
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {/* Almost Ready: Cards with Missing Skill Highlighted */}
+                {almostReady.length > 0 && (
+                  <div className="almost-ready-section card">
+                    <div className="section-title-row">
+                      <div>
+                        <h3 className="section-title">
+                          <span className="section-icon">🎯</span> Almost ready
+                        </h3>
+                        <p className="section-subtitle">
+                          Internships in your top matches with 2 or fewer missing skills
+                        </p>
+                      </div>
+                      <span className="count-pill">{almostReady.length} Eligible Roles</span>
+                    </div>
+
+                    <div className="almost-ready-grid">
+                      {almostReady.map((item) => {
+                        const fullRec = recommendations.find((r) => r.id === item.id)
+                        const missingCount = item.missing ? item.missing.length : 0
+
+                        return (
+                          <div key={item.id} className="almost-ready-card">
+                            <div className="almost-ready-header">
+                              <div className="almost-ready-title-group">
+                                <span className="almost-ready-badge">{item.id}</span>
+                                <div>
+                                  <h4 className="almost-ready-title">{item.title}</h4>
+                                  {fullRec?.company && (
+                                    <p className="almost-ready-company">
+                                      🏢 {fullRec.company} {fullRec.location ? `• 📍 ${fullRec.location}` : ''}
+                                    </p>
+                                  )}
+                                </div>
+                              </div>
+
+                              {fullRec?.score && (
+                                <span
+                                  className="almost-ready-match-score"
+                                  style={{ color: getScoreColor(fullRec.score) }}
+                                >
+                                  {(fullRec.score * 100).toFixed(1)}% match
+                                </span>
+                              )}
+                            </div>
+
+                            <div className="almost-ready-body">
+                              {missingCount > 0 ? (
+                                <div className="missing-skills-group">
+                                  <span className="missing-skills-label">
+                                    Missing skill{missingCount > 1 ? 's' : ''} to qualify:
+                                  </span>
+                                  <div className="missing-skills-chips">
+                                    {item.missing.map((sk) => (
+                                      <span key={sk} className="missing-skill-highlight">
+                                        <span className="gap-icon">⚠️</span> {formatSkillDisplay(sk)}
+                                      </span>
+                                    ))}
+                                  </div>
+                                </div>
+                              ) : (
+                                <div className="ready-match-badge">
+                                  <span>✅ Fully Qualified! You possess all required skills.</span>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                <div className="results-header list-header">
+                  <h2>All Ranked Recommendations</h2>
+                  <span className="results-count">
+                    Showing top {recommendations.length} matches
+                  </span>
+                </div>
+
+                <div className="cards-list">
+                  {recommendations.map((item, index) => {
+                    const scorePercent = Math.min(100, Math.max(0, item.score * 100))
+                    const scoreColor = getScoreColor(item.score)
+                    const skillsList = item.skills
+                      ? item.skills.split(',').map((s) => s.trim()).filter(Boolean)
+                      : []
+
+                    return (
+                      <article key={item.id} className="internship-card card">
+                        {/* Card Top: Rank & Title */}
+                        <div className="card-top">
+                          <div className="title-area">
+                            <span className="rank-badge">#{index + 1}</span>
+                            <div>
+                              <h3 className="internship-title">{item.title}</h3>
+                              <p className="company-name">{item.company}</p>
+                            </div>
+                          </div>
+
+                          <div className="score-badge-group">
+                            <span
+                              className="score-pct-label"
+                              style={{ color: scoreColor }}
+                            >
+                              {(item.score * 100).toFixed(1)}%
+                            </span>
+                            <span className="score-sub">Match Score</span>
                           </div>
                         </div>
-                      )}
-                    </article>
-                  )
-                })}
-              </div>
+
+                        {/* Score Percentage Bar */}
+                        <div className="progress-track" title={`Match Score: ${(item.score * 100).toFixed(2)}%`}>
+                          <div
+                            className="progress-fill"
+                            style={{
+                              width: `${Math.max(scorePercent, 5)}%`,
+                              backgroundColor: scoreColor,
+                            }}
+                          />
+                        </div>
+
+                        {/* Meta badges: Sector & Location */}
+                        <div className="card-meta">
+                          <span className="meta-pill sector-pill">
+                            🏢 {item.sector}
+                          </span>
+                          <span className="meta-pill location-pill">
+                            📍 {item.location}
+                          </span>
+                        </div>
+
+                        {/* Description */}
+                        {item.description && (
+                          <p className="card-description">{item.description}</p>
+                        )}
+
+                        {/* Skills Chips */}
+                        {skillsList.length > 0 && (
+                          <div className="skills-container">
+                            <span className="skills-heading">Skills:</span>
+                            <div className="skills-chips">
+                              {skillsList.map((skill, sIdx) => (
+                                <span key={sIdx} className="skill-chip">
+                                  {skill}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </article>
+                    )
+                  })}
+                </div>
+              </>
             )}
           </section>
         </div>
