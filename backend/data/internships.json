@@ -1,0 +1,632 @@
+[
+  {
+    "id": "INT-001",
+    "title": "Full Stack Web Development Intern",
+    "company": "CloudMatrix Innovations",
+    "sector": "IT",
+    "location": "Bengaluru",
+    "skills": "JavaScript, React, Node.js, REST API, MongoDB",
+    "description": "Collaborate with senior developers to build and test responsive web applications. Assist in designing modern UI components and integrating backend APIs."
+  },
+  {
+    "id": "INT-002",
+    "title": "Backend Engineering Intern",
+    "company": "CodeCraft Systems",
+    "sector": "IT",
+    "location": "Mumbai",
+    "skills": "Python, Django, PostgreSQL, Docker, Git",
+    "description": "Contribute to developing scalable backend microservices and database schemas. Write unit tests and maintain high API performance standards."
+  },
+  {
+    "id": "INT-003",
+    "title": "Cloud Infrastructure Intern",
+    "company": "SkyNimbus Technologies",
+    "sector": "IT",
+    "location": "Delhi NCR",
+    "skills": "AWS, Linux, Bash Scripting, Docker, Terraform",
+    "description": "Support the DevOps team in maintaining cloud server infrastructure and CI/CD pipelines. Monitor system uptime and automate routine deployment scripts."
+  },
+  {
+    "id": "INT-004",
+    "title": "Mobile App Development Intern",
+    "company": "AppNova Labs",
+    "sector": "IT",
+    "location": "Hyderabad",
+    "skills": "Flutter, Dart, Android Studio, Firebase, REST API",
+    "description": "Participate in building cross-platform mobile apps for iOS and Android platforms. Implement smooth UI interactions and test app stability."
+  },
+  {
+    "id": "INT-005",
+    "title": "Software Quality Assurance Intern",
+    "company": "ZenithQA Infotech",
+    "sector": "IT",
+    "location": "Pune",
+    "skills": "Selenium, Python, Manual Testing, Postman, JIRA",
+    "description": "Design test scenarios and execute automated and manual regression tests. Log defects in tracking tools and verify bug fixes with developers."
+  },
+  {
+    "id": "INT-006",
+    "title": "Machine Learning Intern",
+    "company": "NeuralEdge Analytics",
+    "sector": "Data Science and AI",
+    "location": "Chennai",
+    "skills": "Python, Scikit-learn, TensorFlow, Pandas, Data Preprocessing",
+    "description": "Assist in training predictive machine learning models using structured business datasets. Perform exploratory data analysis and feature engineering."
+  },
+  {
+    "id": "INT-007",
+    "title": "Data Analyst Intern",
+    "company": "InsightIQ Data Works",
+    "sector": "Data Science and AI",
+    "location": "Kolkata",
+    "skills": "Python, SQL, Power BI, Advanced Excel, Data Visualization",
+    "description": "Extract insights from multi-source operational data and build interactive dashboards. Deliver data summaries to assist decision-making across teams."
+  },
+  {
+    "id": "INT-008",
+    "title": "NLP Research Intern",
+    "company": "LinguistAI Labs",
+    "sector": "Data Science and AI",
+    "location": "Ahmedabad",
+    "skills": "Python, PyTorch, HuggingFace, Transformers, NLTK",
+    "description": "Experiment with transformer architectures for document summarization and sentiment classification. Clean textual corpora and evaluate model accuracy."
+  },
+  {
+    "id": "INT-009",
+    "title": "Computer Vision Intern",
+    "company": "SpectraVision Technologies",
+    "sector": "Data Science and AI",
+    "location": "Jaipur",
+    "skills": "OpenCV, Python, PyTorch, CNN, Image Processing",
+    "description": "Help develop object detection pipelines and image segmentation models. Annotate image datasets and optimize model inference on edge hardware."
+  },
+  {
+    "id": "INT-010",
+    "title": "Business Intelligence Intern",
+    "company": "VantagePoint Solutions",
+    "sector": "Data Science and AI",
+    "location": "Chandigarh",
+    "skills": "Tableau, SQL, ETL, Data Modeling, Dashboard Design",
+    "description": "Design KPI tracking reports and automate recurring metric reporting. Collaborate with business stakeholders to translate needs into visual dashboards."
+  },
+  {
+    "id": "INT-011",
+    "title": "SOC Security Analyst Intern",
+    "company": "FortressWave CyberSec",
+    "sector": "Cybersecurity",
+    "location": "Kochi",
+    "skills": "SIEM, Wireshark, Splunk, Incident Response, Network Security",
+    "description": "Monitor real-time network traffic and investigate suspicious security alerts. Document security incidents and coordinate triage with the senior SOC team."
+  },
+  {
+    "id": "INT-012",
+    "title": "Penetration Testing Intern",
+    "company": "RedTeam Sentinel Labs",
+    "sector": "Cybersecurity",
+    "location": "Indore",
+    "skills": "Kali Linux, Burp Suite, Metasploit, OWASP Top 10, Ethical Hacking",
+    "description": "Conduct vulnerability scans and assisted penetration testing on web applications. Prepare remediation reports with actionable mitigation steps."
+  },
+  {
+    "id": "INT-013",
+    "title": "Cyber Threat Intelligence Intern",
+    "company": "Aegis ThreatNet",
+    "sector": "Cybersecurity",
+    "location": "Lucknow",
+    "skills": "OSINT, Threat Hunting, Python, Malware Analysis basics, MITRE ATT&CK",
+    "description": "Collect open-source intelligence on emerging threat actors and attack vectors. Maintain threat indicators and produce briefing memos for defense teams."
+  },
+  {
+    "id": "INT-014",
+    "title": "Information Security Compliance Intern",
+    "company": "SecureTrust Advisory",
+    "sector": "Cybersecurity",
+    "location": "Coimbatore",
+    "skills": "ISO 27001, NIST, Risk Assessment, Security Auditing, Compliance",
+    "description": "Assist with internal audits against data protection standards and ISO 27001 controls. Review security policy documentation and update compliance logs."
+  },
+  {
+    "id": "INT-015",
+    "title": "Cloud Security Intern",
+    "company": "StratumSec Solutions",
+    "sector": "Cybersecurity",
+    "location": "Bhubaneswar",
+    "skills": "AWS Security, IAM, CloudTrail, Container Security, Linux",
+    "description": "Evaluate cloud misconfigurations and recommend identity access policy adjustments. Support security hardening for containerized environments."
+  },
+  {
+    "id": "INT-016",
+    "title": "Mechanical Design Intern",
+    "company": "PrecisionForge Dynamics",
+    "sector": "Manufacturing and Mechanical",
+    "location": "Nagpur",
+    "skills": "AutoCAD, SolidWorks, GD&T, 3D Modeling, Sheet Metal Design",
+    "description": "Prepare 2D fabrication drawings and 3D CAD assemblies for machine components. Apply geometric dimensioning and verify manufacturing tolerances."
+  },
+  {
+    "id": "INT-017",
+    "title": "Production Engineering Intern",
+    "company": "TitanWorks Manufacturing",
+    "sector": "Manufacturing and Mechanical",
+    "location": "Bengaluru",
+    "skills": "Lean Manufacturing, 5S, Six Sigma, Process Optimization, Assembly Line",
+    "description": "Analyze manufacturing cycle times on the shop floor to eliminate bottlenecks. Assist in standard operating procedure documentation and 5S audits."
+  },
+  {
+    "id": "INT-018",
+    "title": "Quality Control & Metrology Intern",
+    "company": "ApexCaliber Industries",
+    "sector": "Manufacturing and Mechanical",
+    "location": "Mumbai",
+    "skills": "CMM Inspection, Quality Assurance, Statistical Process Control, ISO 9001",
+    "description": "Perform dimensional inspections on manufactured parts using precision instruments. Track non-conformance records and maintain calibration schedules."
+  },
+  {
+    "id": "INT-019",
+    "title": "Thermal Systems Engineering Intern",
+    "company": "AeroThermal Systems",
+    "sector": "Manufacturing and Mechanical",
+    "location": "Delhi NCR",
+    "skills": "Thermodynamics, CFD, ANSYS Fluent, Heat Transfer, MATLAB",
+    "description": "Simulate airflow and heat dissipation in industrial heat exchangers using CFD tools. Validate simulation results against experimental test-bench data."
+  },
+  {
+    "id": "INT-020",
+    "title": "CNC Programming & Machining Intern",
+    "company": "Veloce Precision Tools",
+    "sector": "Manufacturing and Mechanical",
+    "location": "Hyderabad",
+    "skills": "AutoCAD, G-Code, CNC Milling, Mastercam, Lathe Operation",
+    "description": "Generate CNC toolpaths and optimize cutting speeds for CNC milling centers. Inspect machined prototypes to ensure tight adherence to blueprints."
+  },
+  {
+    "id": "INT-021",
+    "title": "VLSI Design & Verification Intern",
+    "company": "SilicoSilicon Microsystems",
+    "sector": "Electrical and Electronics",
+    "location": "Pune",
+    "skills": "Verilog, SystemVerilog, FPGA, ModelSim, Digital Design",
+    "description": "Write Verilog RTL modules for digital communication blocks and testbenches. Perform functional simulations to verify timing and logic constraints."
+  },
+  {
+    "id": "INT-022",
+    "title": "Embedded Systems Intern",
+    "company": "PulseEmbedded Labs",
+    "sector": "Electrical and Electronics",
+    "location": "Chennai",
+    "skills": "Embedded C, ARM Cortex, Microcontrollers, SPI, I2C",
+    "description": "Develop low-level firmware drivers for ARM-based microcontrollers. Interface sensors, communication buses, and debug peripherals with oscilloscopes."
+  },
+  {
+    "id": "INT-023",
+    "title": "PCB Design & Prototyping Intern",
+    "company": "ElectroCraft Circuits",
+    "sector": "Electrical and Electronics",
+    "location": "Kolkata",
+    "skills": "Altium Designer, KiCad, Schematic Capture, Circuit Simulation, Soldering",
+    "description": "Design multi-layer printed circuit board schematics and routing layouts. Assemble prototype boards, perform component soldering, and test continuity."
+  },
+  {
+    "id": "INT-024",
+    "title": "Power Electronics Intern",
+    "company": "VoltAmp Dynamics",
+    "sector": "Electrical and Electronics",
+    "location": "Ahmedabad",
+    "skills": "MATLAB Simulink, Inverter Design, Power Converters, Motor Drives",
+    "description": "Assist in simulating and testing high-efficiency DC-DC converters and inverters. Analyze harmonic distortion and thermal characteristics of power devices."
+  },
+  {
+    "id": "INT-025",
+    "title": "IoT Hardware Development Intern",
+    "company": "ConnectSphere Technologies",
+    "sector": "Electrical and Electronics",
+    "location": "Jaipur",
+    "skills": "Verilog, ESP32, Arduino, Wireless Protocols, Circuit Prototyping",
+    "description": "Prototype connected hardware sensors using ESP32 modules and wireless stacks. Integrate edge sensor readings with cloud telemetry services."
+  },
+  {
+    "id": "INT-026",
+    "title": "Accounts & Taxation Intern",
+    "company": "Kuber FinServices",
+    "sector": "Finance and Banking",
+    "location": "Chandigarh",
+    "skills": "Tally, GST, TDS, Bookkeeping, Financial Statements",
+    "description": "Record daily accounting journal entries and reconcile bank statements in Tally. Assist in preparing monthly GST returns and statutory TDS filings."
+  },
+  {
+    "id": "INT-027",
+    "title": "Financial Analyst Intern",
+    "company": "Ascent Capital Advisors",
+    "sector": "Finance and Banking",
+    "location": "Kochi",
+    "skills": "Financial Modeling, DCF Valuation, Advanced Excel, Ratio Analysis",
+    "description": "Build financial projection models and conduct discounted cash flow valuations. Analyze quarterly earnings and prepare company investment briefs."
+  },
+  {
+    "id": "INT-028",
+    "title": "Internal Audit Intern",
+    "company": "Apex Assurance Partners",
+    "sector": "Finance and Banking",
+    "location": "Indore",
+    "skills": "Tally, Internal Audit, Statutory Audit, Excel, Risk Assessment",
+    "description": "Review internal financial controls and verify expenditure documentation against vouchers. Draft audit observation summaries for review meetings."
+  },
+  {
+    "id": "INT-029",
+    "title": "Investment Banking Operations Intern",
+    "company": "Meridian Global Securities",
+    "sector": "Finance and Banking",
+    "location": "Lucknow",
+    "skills": "Financial Modeling, Bloomberg Terminal basics, Pitch Books, Financial Analysis",
+    "description": "Gather comparable company metrics and industry valuation benchmarks. Assist transaction teams in compiling pitch books and deal documentation."
+  },
+  {
+    "id": "INT-030",
+    "title": "Credit Appraisal & Banking Intern",
+    "company": "Pragathi Gramin Bank Partners",
+    "sector": "Finance and Banking",
+    "location": "Coimbatore",
+    "skills": "GST, KYC Verification, AML Compliance, Credit Appraisal, Financial Statements",
+    "description": "Scrutinize loan applications, applicant KYC, and past financial statements. Prepare initial credit assessment notes for SME and personal loan approvals."
+  },
+  {
+    "id": "INT-031",
+    "title": "Digital Marketing & SEO Intern",
+    "company": "OmniRank Media",
+    "sector": "Marketing and Media",
+    "location": "Bhubaneswar",
+    "skills": "SEO, Google Analytics, SEM, Keyword Research, Content Strategy",
+    "description": "Execute on-page and technical SEO audits to enhance website organic visibility. Track keyword rankings and analyze traffic trends in Google Analytics."
+  },
+  {
+    "id": "INT-032",
+    "title": "Social Media Marketing Intern",
+    "company": "BuzzVibe Communications",
+    "sector": "Marketing and Media",
+    "location": "Nagpur",
+    "skills": "Meta Ads Manager, Copywriting, Canva, Social Media Analytics, Campaign Management",
+    "description": "Plan weekly content calendars and create eye-catching social media posts. Monitor engagement metrics and optimize audience targeting for ad campaigns."
+  },
+  {
+    "id": "INT-033",
+    "title": "Content Writing & Strategy Intern",
+    "company": "WordWeave Digital",
+    "sector": "Marketing and Media",
+    "location": "Bengaluru",
+    "skills": "SEO, Content Strategy, Copywriting, WordPress, Proofreading",
+    "description": "Write SEO-friendly blog articles, product guides, and website copies. Research trending industry topics and optimize content for search intent."
+  },
+  {
+    "id": "INT-034",
+    "title": "Public Relations & Brand Intern",
+    "company": "Horizon PR & Media",
+    "sector": "Marketing and Media",
+    "location": "Mumbai",
+    "skills": "Media Relations, Press Releases, Brand Communications, Event Management",
+    "description": "Draft press releases and pitch story ideas to media publications. Coordinate media interview schedules and maintain press coverage tracking files."
+  },
+  {
+    "id": "INT-035",
+    "title": "Video Editing & Motion Graphics Intern",
+    "company": "PixelCraft Studios",
+    "sector": "Marketing and Media",
+    "location": "Delhi NCR",
+    "skills": "Adobe Premiere Pro, After Effects, Video Editing, Storyboarding, Audio Mixing",
+    "description": "Edit short-form promotional videos and assemble motion graphic title cards. Coordinate with the creative team to deliver polished video cuts for marketing."
+  },
+  {
+    "id": "INT-036",
+    "title": "Molecular Diagnostics Intern",
+    "company": "Genovate BioSciences",
+    "sector": "Healthcare and Life Sciences",
+    "location": "Hyderabad",
+    "skills": "PCR, Gel Electrophoresis, DNA Extraction, Pipetting, Lab Safety",
+    "description": "Perform DNA and RNA extractions and run real-time PCR diagnostic assays. Maintain precise lab records and adhere to biosafety protocols."
+  },
+  {
+    "id": "INT-037",
+    "title": "Clinical Research Coordinator Intern",
+    "company": "Synapse Health Research",
+    "sector": "Healthcare and Life Sciences",
+    "location": "Pune",
+    "skills": "Clinical Trials, GCP Guidelines, Data Management, Protocol Review",
+    "description": "Assist clinical research teams with trial subject tracking and regulatory documentation. Verify case report forms in compliance with Good Clinical Practice."
+  },
+  {
+    "id": "INT-038",
+    "title": "Biochemical Analysis Intern",
+    "company": "AuraPharma Life Sciences",
+    "sector": "Healthcare and Life Sciences",
+    "location": "Chennai",
+    "skills": "PCR, HPLC, Spectrophotometry, Chromatography, Assay Development",
+    "description": "Prepare chemical reagents and operate spectrophotometers for enzyme assays. Document experimental results and calibrate laboratory equipment."
+  },
+  {
+    "id": "INT-039",
+    "title": "Medical Device Quality Intern",
+    "company": "Biotronix Medical Devices",
+    "sector": "Healthcare and Life Sciences",
+    "location": "Kolkata",
+    "skills": "ISO 13485, Biomedical Instrumentation, Quality Compliance, Calibration",
+    "description": "Conduct inspection checks on biomedical monitoring devices and surgical tools. Ensure assembly processes meet ISO 13485 regulatory standards."
+  },
+  {
+    "id": "INT-040",
+    "title": "Pharmacovigilance & Drug Safety Intern",
+    "company": "TheraGuard Pharmacovigilance",
+    "sector": "Healthcare and Life Sciences",
+    "location": "Ahmedabad",
+    "skills": "Drug Safety, MedDRA, Adverse Event Reporting, Regulatory Guidelines",
+    "description": "Process adverse drug reaction case reports and code medical terms with MedDRA. Compile safety surveillance summaries for regulatory review."
+  },
+  {
+    "id": "INT-041",
+    "title": "Precision Agriculture & Drone Intern",
+    "company": "KisanDrone Technologies",
+    "sector": "Agriculture and Rural Development",
+    "location": "Jaipur",
+    "skills": "Drone Mapping, GIS, IoT Sensors, Remote Sensing, Farm Management Software",
+    "description": "Deploy drone survey flights to capture multi-spectral imagery of crop fields. Analyze vegetation health indices to detect early crop stress patterns."
+  },
+  {
+    "id": "INT-042",
+    "title": "Agronomy Field Operations Intern",
+    "company": "DhartiVikas AgriSolutions",
+    "sector": "Agriculture and Rural Development",
+    "location": "Chandigarh",
+    "skills": "Soil Testing, Crop Health Monitoring, Pest Management, Irrigation Systems",
+    "description": "Collect soil samples from farm clusters and perform nutrient analysis tests. Formulate tailored fertilizer recommendations for local farmer groups."
+  },
+  {
+    "id": "INT-043",
+    "title": "Rural Microfinance & Outreach Intern",
+    "company": "GramSetu Microfinance",
+    "sector": "Agriculture and Rural Development",
+    "location": "Kochi",
+    "skills": "SHG Mobilization, Micro-Credit Appraisal, Rural Outreach, Field Surveying",
+    "description": "Facilitate micro-loan orientations with self-help groups in rural villages. Document credit verification files and evaluate livelihood generation plans."
+  },
+  {
+    "id": "INT-044",
+    "title": "Post-Harvest Supply & Quality Intern",
+    "company": "Annapurna ColdChain",
+    "sector": "Agriculture and Rural Development",
+    "location": "Indore",
+    "skills": "Cold Chain Logistics, Grain Quality Testing, Food Storage, HACCP",
+    "description": "Monitor temperature-controlled storage facilities and conduct moisture checks. Ensure post-harvest handling complies with food safety storage standards."
+  },
+  {
+    "id": "INT-045",
+    "title": "Agri-Business & FPO Development Intern",
+    "company": "Samriddhi Farmer Producer Co",
+    "sector": "Agriculture and Rural Development",
+    "location": "Lucknow",
+    "skills": "Market Linkages, Supply Chain Coordination, FPO Management, Negotiation",
+    "description": "Coordinate crop procurement schedules directly with smallholder farmer groups. Expand commercial market linkages with wholesale agricultural buyers."
+  },
+  {
+    "id": "INT-046",
+    "title": "Instructional Design Intern",
+    "company": "VidyaPath Learning Solutions",
+    "sector": "Education and Training",
+    "location": "Coimbatore",
+    "skills": "Curriculum Development, ADDIE Model, Articulate Storyline, LMS Administration",
+    "description": "Design interactive e-learning modules based on structured pedagogical frameworks. Develop assessments and upload multimedia course content onto the LMS."
+  },
+  {
+    "id": "INT-047",
+    "title": "STEM Education Trainer Intern",
+    "company": "RoboGenius Academy",
+    "sector": "Education and Training",
+    "location": "Bhubaneswar",
+    "skills": "Robotics Kits, Scratch Programming, Hands-on Experiments, Classroom Management",
+    "description": "Deliver engaging experiential science and robotics workshops in school labs. Guide students through building mechanical models and coding basic sensors."
+  },
+  {
+    "id": "INT-048",
+    "title": "EdTech Content Developer Intern",
+    "company": "EduElevate Digital",
+    "sector": "Education and Training",
+    "location": "Nagpur",
+    "skills": "Lesson Planning, Explainer Scripting, Educational Video Production, Pedagogy",
+    "description": "Author script storyboards for conceptual animated educational videos. Review question banks and create detailed step-by-step solution guides."
+  },
+  {
+    "id": "INT-049",
+    "title": "Corporate Training Coordinator Intern",
+    "company": "SkillSphere Corporate Academy",
+    "sector": "Education and Training",
+    "location": "Bengaluru",
+    "skills": "Training Needs Analysis, Workshop Facilitation, Feedback Surveys, Scheduling",
+    "description": "Coordinate logistics for employee upskilling bootcamps and executive webinars. Collect post-training evaluations and analyze program effectiveness."
+  },
+  {
+    "id": "INT-050",
+    "title": "Academic Research & Evaluation Intern",
+    "company": "Prajna Institute of Policy & Education",
+    "sector": "Education and Training",
+    "location": "Mumbai",
+    "skills": "Literature Review, Academic Writing, Statistical Analysis, Survey Methodology",
+    "description": "Conduct field surveys on primary school learning outcomes in rural clusters. Analyze evaluation datasets using statistical packages and draft summary papers."
+  },
+  {
+    "id": "INT-051",
+    "title": "Structural Engineering Design Intern",
+    "company": "SetuBandh Infrastructure",
+    "sector": "Civil and Infrastructure",
+    "location": "Delhi NCR",
+    "skills": "AutoCAD, STAAD Pro, RCC Design, Structural Analysis, IS Codes",
+    "description": "Assist in structural modeling of reinforced concrete beams and framing systems. Check member capacities against Indian Standard design codes."
+  },
+  {
+    "id": "INT-052",
+    "title": "Construction Site Execution Intern",
+    "company": "Pratham Construtech",
+    "sector": "Civil and Infrastructure",
+    "location": "Hyderabad",
+    "skills": "AutoCAD, Site Supervision, Bar Bending Schedule, Concrete Quality Testing, Safety Compliance",
+    "description": "Supervise rebar placements and monitor concrete pouring operations on site. Verify construction milestones against structural drawing details."
+  },
+  {
+    "id": "INT-053",
+    "title": "Quantity Surveying & Estimation Intern",
+    "company": "Nirman Infra Estimators",
+    "sector": "Civil and Infrastructure",
+    "location": "Pune",
+    "skills": "AutoCAD, Quantity Estimation, BOQ Preparation, MS Project, Cost Analysis",
+    "description": "Compute material takeoff quantities from architectural blueprints. Prepare comprehensive bill of quantities (BOQ) and assist in tender cost analysis."
+  },
+  {
+    "id": "INT-054",
+    "title": "Geotechnical Investigation Intern",
+    "company": "TerraFirm Geotech Consultants",
+    "sector": "Civil and Infrastructure",
+    "location": "Chennai",
+    "skills": "Soil Mechanics, SPT Testing, Slope Stability, Foundation Design",
+    "description": "Participate in borehole drilling inspections and standard penetration testing. Log soil strata classifications and test shear strength parameters in the lab."
+  },
+  {
+    "id": "INT-055",
+    "title": "Transportation & Highway Planning Intern",
+    "company": "Vistara Transinfra Planners",
+    "sector": "Civil and Infrastructure",
+    "location": "Kolkata",
+    "skills": "AutoCAD, Traffic Engineering, GIS Mapping, Road Design, Pavement Analysis",
+    "description": "Analyze traffic volume counts and design signal timing plans for urban corridors. Assist in geometric layout drafting of arterial highway junctions."
+  },
+  {
+    "id": "INT-056",
+    "title": "Talent Acquisition Intern",
+    "company": "HumanEdge Consulting",
+    "sector": "HR and Administration",
+    "location": "Ahmedabad",
+    "skills": "Sourcing, Candidate Screening, LinkedIn Recruiter, Interview Scheduling, ATS",
+    "description": "Source potential candidates across job boards and conduct initial phone screens. Schedule technical interview rounds and track candidates through the ATS."
+  },
+  {
+    "id": "INT-057",
+    "title": "Employee Engagement & Culture Intern",
+    "company": "WorkVibe People Solutions",
+    "sector": "HR and Administration",
+    "location": "Jaipur",
+    "skills": "Internal Communications, Event Planning, Employee Feedback Surveys, Team Building",
+    "description": "Organize quarterly team-building activities and employee recognition initiatives. Draft internal culture newsletters and administer pulse feedback surveys."
+  },
+  {
+    "id": "INT-058",
+    "title": "HR Operations & Payroll Intern",
+    "company": "Apex HR Nexus",
+    "sector": "HR and Administration",
+    "location": "Chandigarh",
+    "skills": "Tally, Onboarding, Attendance Tracking, HRIS, Payroll Basics, Documentation",
+    "description": "Facilitate new hire orientation paperwork and verification of identity credentials. Maintain employee records and assist in monthly attendance reconciliations."
+  },
+  {
+    "id": "INT-059",
+    "title": "Learning & Development Intern",
+    "company": "SkillHarbor Talent Group",
+    "sector": "HR and Administration",
+    "location": "Kochi",
+    "skills": "L&D Coordination, Training Delivery, Skill Matrix, Employee Development",
+    "description": "Maintain the organizational competency skill matrix across business units. Coordinate logistics and attendee tracking for leadership development programs."
+  },
+  {
+    "id": "INT-060",
+    "title": "Corporate Office Administration Intern",
+    "company": "Synergy Corporate Hub",
+    "sector": "HR and Administration",
+    "location": "Indore",
+    "skills": "Facility Management, Vendor Management, Procurement, Inventory Control",
+    "description": "Manage office supply inventory levels and liaise with maintenance vendors. Ensure meeting room facilities and daily workplace operations run smoothly."
+  },
+  {
+    "id": "INT-061",
+    "title": "Warehouse Operations Intern",
+    "company": "VelocityHub Logistics",
+    "sector": "Logistics and Supply Chain",
+    "location": "Lucknow",
+    "skills": "Inventory Management, WMS, Barcode Scanning, Forklift Safety, Order Picking",
+    "description": "Monitor inbound shipments and supervise warehouse bin allocation routines. Audit physical inventory counts against warehouse management system logs."
+  },
+  {
+    "id": "INT-062",
+    "title": "Supply Chain Planning Intern",
+    "company": "TransLogix Supply Solutions",
+    "sector": "Logistics and Supply Chain",
+    "location": "Coimbatore",
+    "skills": "Demand Forecasting, MRP, Excel Modeling, Vendor Coordination",
+    "description": "Analyze historical SKU consumption rates to project future replenishment needs. Coordinate purchase release dates with raw material suppliers."
+  },
+  {
+    "id": "INT-063",
+    "title": "Freight Forwarding & Customs Intern",
+    "company": "OceanAir Freight Connect",
+    "sector": "Logistics and Supply Chain",
+    "location": "Bhubaneswar",
+    "skills": "GST, Dispatch Scheduling, Bill of Lading, Customs Documentation, Fleet Tracking",
+    "description": "Prepare shipping manifests, export bills, and commercial invoice sets. Track multimodal freight consignments and update transit milestone logs."
+  },
+  {
+    "id": "INT-064",
+    "title": "Procurement & Sourcing Intern",
+    "company": "GlobalTrade Procurement",
+    "sector": "Logistics and Supply Chain",
+    "location": "Nagpur",
+    "skills": "Vendor Evaluation, Purchase Orders, Negotiation, SAP MM basics",
+    "description": "Assist in requesting price quotations and compiling supplier comparison matrices. Issue official purchase orders and follow up on promised delivery lead times."
+  },
+  {
+    "id": "INT-065",
+    "title": "Fleet Routing & Dispatch Intern",
+    "company": "ExpressRoute Transport",
+    "sector": "Logistics and Supply Chain",
+    "location": "Bengaluru",
+    "skills": "GIS Routing, Delivery Fleet Monitoring, Transportation Logistics, SLA Tracking",
+    "description": "Map optimal multi-drop delivery routes to minimize transit delay and fuel consumption. Monitor driver turnaround times and track on-time delivery metrics."
+  },
+  {
+    "id": "INT-066",
+    "title": "E-Commerce Catalog Operations Intern",
+    "company": "ShopSphere Online Retail",
+    "sector": "Retail and E-Commerce",
+    "location": "Mumbai",
+    "skills": "SEO, Product Listing, Shopify, Amazon Seller Central, SKU Management",
+    "description": "Upload high-quality product listings and optimize metadata for marketplace search. Manage product attribute consistency and audit active catalog errors."
+  },
+  {
+    "id": "INT-067",
+    "title": "Retail Store Merchandising Intern",
+    "company": "Lifestyle Junction Outlets",
+    "sector": "Retail and E-Commerce",
+    "location": "Delhi NCR",
+    "skills": "Visual Merchandising, POS Billing, Stock Auditing, Customer Service",
+    "description": "Arrange creative visual store displays aligned with seasonal promotion themes. Assist cash desk billing during peak hours and monitor floor stock levels."
+  },
+  {
+    "id": "INT-068",
+    "title": "Category Management Intern",
+    "company": "MarketPlace Central Hub",
+    "sector": "Retail and E-Commerce",
+    "location": "Hyderabad",
+    "skills": "Competitive Pricing, Market Trend Analysis, Vendor Negotiations, Assortment Planning",
+    "description": "Track competitor pricing strategies and discover gaps in product category assortments. Partner with brand distributors to onboard top-selling SKUs."
+  },
+  {
+    "id": "INT-069",
+    "title": "Customer Experience & CRM Intern",
+    "company": "PrimeRetail Support",
+    "sector": "Retail and E-Commerce",
+    "location": "Pune",
+    "skills": "Zendesk, CRM Management, Conflict Resolution, Customer Retention",
+    "description": "Handle escalated customer inquiries regarding product orders and delivery delays. Analyze ticket trends in CRM software to suggest service improvements."
+  },
+  {
+    "id": "INT-070",
+    "title": "Omnichannel Retail Logistics Intern",
+    "company": "UrbanStore Retail Systems",
+    "sector": "Retail and E-Commerce",
+    "location": "Chennai",
+    "skills": "Inventory Allocation, Channel Sales Tracking, Promotion Planning, Retail Analytics",
+    "description": "Reconcile online click-and-collect orders with brick-and-mortar store inventories. Analyze multichannel sales velocity to balance warehouse dispatches."
+  }
+]
