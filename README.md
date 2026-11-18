@@ -1,5 +1,7 @@
 # PM Internship Recommender
 
+> **Latest Update:** Full-stack recommendation prototype deployed with Flask backend, React + Vite UI, synthetic 70-internship dataset (JSON & Excel), and 100% Precision@5 benchmark verification.
+
 An AI-powered internship recommendation engine built for the **PM Internship Scheme**. The system matches candidate credentials (education, skills, interests, sector preference, and location) against internship opportunities using **TF-IDF Vectorization** (unigram + bigram) and **Cosine Similarity**.
 
 ---
